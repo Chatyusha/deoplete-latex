@@ -31,6 +31,10 @@
 		{
 			"word" : "date",
 			"dup" : 1
+		},
+		{
+			"word" : "thanks",
+			"dup" : 1
 		}
 	]
 }
