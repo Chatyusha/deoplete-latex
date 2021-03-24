@@ -8,13 +8,22 @@ class Source(Base):
         self.mark = '[latex]'
         self.input_pattern = (r'^\\')
 
+    def on_init(self, context):
+        vars = context['vars']
+
+        self.json_path = vars.get('', '')
+
+        try:
+            # init(load suorce) only work
+            pass
+        except Exception:
+            # Ignore the error
+            pass
+
     def gather_candidates(self, context):
         return [
             {
-                  'word' : "apple"
-                , 'abbr' : "apple  : red, round and delicious!"
-                , 'info' : "Apple is delicious"
-                , 'kind' : "Food"
-                , 'dup'  : 1
+                  'word' : "begin",
+                  'dup'  : 1
             }
         ]

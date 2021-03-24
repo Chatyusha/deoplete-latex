@@ -1,0 +1,36 @@
+{
+	"Preamble" : [
+		{
+			"word" : "documentclass",
+			"dup" : 1
+		},
+		{
+			"word" : "usepackage",
+			"dup" : 1
+		},
+		{
+			"word" : "newcommand",
+			"dup" : 1
+		},
+		{
+			"word" : "renewcommand",
+			"dup" : 1
+		},
+		{
+			"word" : "providecommand",
+			"dup" : 1
+		},
+		{
+			"word" : "title",
+			"dup" : 1
+		},
+		{
+			"word" : "author",
+			"dup" : 1
+		},
+		{
+			"word" : "date",
+			"dup" : 1
+		}
+	]
+}
