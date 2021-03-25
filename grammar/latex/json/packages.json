@@ -1,0 +1,12 @@
+{
+	"Packages" : [
+		{
+			"word" : "graphicx",
+			"dup" : 1
+		},
+		{
+			"word" : "tikz",
+			"dup" : 1
+		}
+	]
+}

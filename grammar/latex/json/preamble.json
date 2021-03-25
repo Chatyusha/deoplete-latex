@@ -21,19 +21,7 @@
 			"dup" : 1
 		},
 		{
-			"word" : "title",
-			"dup" : 1
-		},
-		{
-			"word" : "author",
-			"dup" : 1
-		},
-		{
-			"word" : "date",
-			"dup" : 1
-		},
-		{
-			"word" : "thanks",
+			"word" : "DeclareMathOperator",
 			"dup" : 1
 		}
 	]

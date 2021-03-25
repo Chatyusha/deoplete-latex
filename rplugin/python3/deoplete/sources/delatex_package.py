@@ -7,9 +7,9 @@ import pathlib
 class Source(Base):
     def __init__(self, vim):
         Base.__init__(self, vim)
-        self.name = 'deoplete-latex-preamble'
+        self.name = 'deoplete-latex-pkg'
         self.mark = '[latex]'
-        self.input_pattern = (r'^\\')
+        self.input_pattern = (r'^\\usepackage.*{')
 
     def on_init(self, context):
         vars = context['vars']
@@ -25,7 +25,7 @@ class Source(Base):
             pass
 
     def gather_candidates(self, context):
-        file_path = self.json_path + "/preamble.json"
+        file_path = self.json_path + "/packages.json"
         pop_json = open(file_path,'r')
         pop_list = json.load(pop_json)
-        return pop_list["Preamble"]
+        return pop_list["Packages"]

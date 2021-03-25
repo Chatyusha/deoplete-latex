@@ -1,1 +1,8 @@
-let g:json_path=expand('<sfile>:p:h') . '/json'
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap ( ()<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+inoremap $ $$<Esc>i
+inoremap \[ \[\]<Esc>hi
+inoremap \{ \{\}<Esc>hi
