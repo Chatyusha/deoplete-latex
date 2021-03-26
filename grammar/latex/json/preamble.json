@@ -1,0 +1,22 @@
+{
+	"Preamble" : [
+		{
+			"word" : "documentclass"
+		},
+		{
+			"word" : "usepackage"
+		},
+		{
+			"word" : "newcommand"
+		},
+		{
+			"word" : "renewcommand"
+		},
+		{
+			"word" : "providecommand"
+		},
+		{
+			"word" : "DeclareMathOperator"
+		}
+	]
+}

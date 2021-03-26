@@ -1,1 +1,8 @@
-autocmd BufRead,BufNewFile *.tex set filetype=tex
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap ( ()<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+inoremap $ $$<Esc>i
+inoremap \[ \[\]<Esc>hi
+inoremap \{ \{\}<Esc>hi
