@@ -1,0 +1,118 @@
+{
+	"Greeks" : [
+		{
+			"word" : "alpha"
+		},
+		{
+			"word" : "beta"
+		},
+		{
+			"word" : "Gamma"
+		},
+		{
+			"word" : "gamma"
+		},
+		{
+			"word" : "Delta"
+		},
+		{
+			"word" : "delta"
+		},
+		{
+			"word" : "epsilon"
+		},
+		{
+			"word" : "varepsilon"
+		},
+		{
+			"word" : "zeta"
+		},
+		{
+			"word" : "eta"
+		},
+		{
+			"word" : "Theta"
+		},
+		{
+			"word" : "theta"
+		},
+		{
+			"word" : "vartheta"
+		},
+		{
+			"word" : "kappa"
+		},
+		{
+			"word" : "Lambda"
+		},
+		{
+			"word" : "lambda"
+		},
+		{
+			"word" : "mu"
+		},
+		{
+			"word" : "Xi"
+		},
+		{
+			"word" : "xi"
+		},
+		{
+			"word" : "Pi"
+		},
+		{
+			"word" : "pi"
+		},
+		{
+			"word" : "varpi"
+		},
+		{
+			"word" : "rho"
+		},
+		{
+			"word" : "varrho"
+		},
+		{
+			"word" : "Sigma"
+		},
+		{
+			"word" : "sigma"
+		},
+		{
+			"word" : "varsigma"
+		},
+		{
+			"word" : "tau"
+		},
+		{
+			"word" : "Upsilon"
+		},
+		{
+			"word" : "upsilon"
+		},
+		{
+			"word" : "Phi"
+		},
+		{
+			"word" : "phi"
+		},
+		{
+			"word" : "varphi"
+		},
+		{
+			"word" : "chi"
+		},
+		{
+			"word" : "Psi"
+		},
+		{
+			"word" : "psi"
+		},
+		{
+			"word" : "Omega"
+		},
+		{
+			"word" : "omega"
+		}
+	]
+}

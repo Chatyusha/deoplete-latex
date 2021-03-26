@@ -49,6 +49,12 @@
 			"word" : "quotation"
 		},
 		{
+			"word" : "table"
+		},
+		{
+			"word" : "tabular"
+		},
+		{
 			"word" : "thebibliography"
 		}
 	]
