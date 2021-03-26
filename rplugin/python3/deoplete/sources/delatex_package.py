@@ -10,12 +10,15 @@ class Source(Base):
         self.name = 'deoplete-latex-pkg'
         self.mark = '[latex]'
         self.input_pattern = (r'^\\usepackage.*{')
+        json_path=str(pathlib.Path(__file__).parent.parent.parent.parent.parent) + "/grammar/latex/json"
+        file_path = json_path + "/packages.json"
+        pop_json = open(file_path,'r')
+        self.pop_list = json.load(pop_json)
+        for i in self.pop_list['Packages']:
+            i["dup"] = 1
 
     def on_init(self, context):
         vars = context['vars']
-
-        self.json_path=str(pathlib.Path(__file__).parent.parent.parent.parent.parent) + "/grammar/latex/json"
-
 
         try:
             # init(load suorce) only work
@@ -25,9 +28,4 @@ class Source(Base):
             pass
 
     def gather_candidates(self, context):
-        file_path = self.json_path + "/packages.json"
-        pop_json = open(file_path,'r')
-        pop_list = json.load(pop_json)
-        for i in pop_list['Packages']:
-            i["dup"] = 1
-        return pop_list["Packages"]
+        return self.pop_list["Packages"]

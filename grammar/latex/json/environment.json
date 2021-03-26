@@ -1,16 +1,55 @@
 {
 	"Environment" : [
 		{
-			"word" : "array",
-			"dup" : 1
+			"word" : "array"
 		},
 		{
-			"word": "abstract",
-			"dup" : 1
+			"word": "abstract"
 		},
 		{
-			"word" : "algin",
-			"dup" : 1
+			"word" : "align"
+		},
+		{
+			"word" : "align*"
+		},
+		{
+			"word": "cases"
+		},
+		{
+			"word" : "center"
+		},
+		{
+			"word" : "document"
+		},
+		{
+			"word" : "equation" 
+		},
+		{
+			"word" : "eqnarray"
+		},
+		{
+			"word" : "eqnarray*"
+		},
+		{
+			"word" : "figure"
+		},
+		{
+			"word" : "flushleft"
+		},
+		{
+			"word" : "flushright"
+		},
+		{
+			"word" : "math"
+		},
+		{
+			"word" : "quote"
+		},
+		{
+			"word" : "quotation"
+		},
+		{
+			"word" : "thebibliography"
 		}
 	]
 }
