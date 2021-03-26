@@ -28,4 +28,6 @@ class Source(Base):
         file_path = self.json_path + "/packages.json"
         pop_json = open(file_path,'r')
         pop_list = json.load(pop_json)
+        for i in pop_list['Packages']:
+            i["dup"] = 1
         return pop_list["Packages"]

@@ -1,0 +1,16 @@
+{
+	"Environment" : [
+		{
+			"word" : "array",
+			"dup" : 1
+		},
+		{
+			"word": "abstract",
+			"dup" : 1
+		},
+		{
+			"word" : "algin",
+			"dup" : 1
+		}
+	]
+}

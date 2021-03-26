@@ -1,28 +1,22 @@
 {
 	"Preamble" : [
 		{
-			"word" : "documentclass",
-			"dup" : 1
+			"word" : "documentclass"
 		},
 		{
-			"word" : "usepackage",
-			"dup" : 1
+			"word" : "usepackage"
 		},
 		{
-			"word" : "newcommand",
-			"dup" : 1
+			"word" : "newcommand"
 		},
 		{
-			"word" : "renewcommand",
-			"dup" : 1
+			"word" : "renewcommand"
 		},
 		{
-			"word" : "providecommand",
-			"dup" : 1
+			"word" : "providecommand"
 		},
 		{
-			"word" : "DeclareMathOperator",
-			"dup" : 1
+			"word" : "DeclareMathOperator"
 		}
 	]
 }
