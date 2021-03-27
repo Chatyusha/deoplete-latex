@@ -1,4 +1,5 @@
 from .base import Base
+from pynvim import Nvim
 import re
 import json
 import os
@@ -11,10 +12,15 @@ class Source(Base):
         self.mark = '[latex]'
         self.input_pattern = (r'\\')
         json_path=str(pathlib.Path(__file__).parent.parent.parent.parent.parent) + "/grammar/latex/json"
-        file_path = json_path + "/greek.json"
-        pop_json = open(file_path,'r')
-        self.pop_list = json.load(pop_json)
-        for i in self.pop_list['Greeks']:
+        json_files = ["/greek.json", "/math.json"]
+        file_path = [json_path + i for i in json_files ]
+        pop_json = [open(i,'r') for i in file_path]
+        str_json= [json.load(i) for i in pop_json]
+        Keys=["Greeks","Math"]
+        self.pop_list = []
+        for i in range(len(Keys)):
+            self.pop_list += str_json[i][Keys[i]]
+        for i in self.pop_list:
             i['dup'] = 1
 
     def on_init(self, context):
@@ -28,4 +34,5 @@ class Source(Base):
             pass
 
     def gather_candidates(self, context):
-        return self.pop_list["Greeks"]
+
+        return self.pop_list
