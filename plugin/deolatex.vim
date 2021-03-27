@@ -1,4 +1,4 @@
-inoremap [ []<Esc>i
+noremap [ []<Esc>i
 inoremap { {}<Esc>i
 inoremap ( ()<Esc>i
 inoremap " ""<Esc>i

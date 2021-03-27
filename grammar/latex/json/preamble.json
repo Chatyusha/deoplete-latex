@@ -17,6 +17,18 @@
 		},
 		{
 			"word" : "DeclareMathOperator"
+		},
+		{
+			"word" : "title"
+		},
+		{
+			"word" : "author"
+		},
+		{
+			"word" : "date"
+		},
+		{
+			"word" : "maketitle"
 		}
 	]
 }
