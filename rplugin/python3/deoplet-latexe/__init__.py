@@ -30,10 +30,16 @@ class NvimLaTeXCompile(object):
         self.path=self.nvim.eval("g:latex_path")
         self.compiler=self.nvim.eval("g:latex_compiler")
         self.driver=self.nvim.eval("g:latex_driver")
+    
+    @pynvim.autocmd('BufRead,BufRead', pattern='*.tex,*.bib', sync=True)
+    def ImportStyle(self):
+        self.sty_paths='/usr/local/texlive/2020/texmf-dist/tex/latex-dev'
+        self.mathfont='/usr/local/texlive/2020/texmf-dist/source/latex/mathfont'
 
     @pynvim.command('Tex2pdf')
     def LatexCompile(self):
         fname=self.nvim.eval("expand('%:p')")
-        self.nvim.command("echo \"" + fname +"\"")
+        #self.nvim.command("echo \"" + fname +"\"")
+        self.nvim.command("echo $PWD")
         #self.nvim.command("echo 'Now Developping ...'")
 
